@@ -1,0 +1,11 @@
+B:\dev\repo\Mythical\MythicalUtils\obj\Debug\netstandard2.0\MythicalUtils.AssemblyInfoInputs.cache
+B:\dev\repo\Mythical\MythicalUtils\obj\Debug\netstandard2.0\MythicalUtils.AssemblyInfo.cs
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\MythicalUtils.deps.json
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\MythicalUtils.dll
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\snappy32.dll
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\snappy64.dll
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\libzstd.dll
+B:\dev\repo\Mythical\MythicalUtils\bin\Debug\netstandard2.0\MythicalUtils.pdb
+B:\dev\repo\Mythical\MythicalUtils\obj\Debug\netstandard2.0\MythicalUtils.dll
+B:\dev\repo\Mythical\MythicalUtils\obj\Debug\netstandard2.0\MythicalUtils.pdb
+B:\dev\repo\Mythical\MythicalUtils\obj\Debug\netstandard2.0\MythicalUtils.csprojAssemblyReference.cache

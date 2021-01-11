@@ -1,0 +1,49 @@
+﻿@page "/services"
+@inject ServicesService serviceService
+@using MythicalWebApp.Data
+@using Mythical.RenderModels
+
+
+<h1>Services</h1>
+
+@if (serviceRenders == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Created By</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var serviceRender in serviceRenders)
+            {
+                <tr>
+                    <td>@serviceRender.ServiceType.Type</td>
+                    <td>@serviceRender.ServiceStatus.Status</td>
+                    <td>@serviceRender.CreatedBy.Name</td>
+                    <td>
+                        <NavLink class="nav-link" href=@($"serviceDetail/{serviceRender.Id}")>
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Details
+                        </NavLink>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    public List<ServiceRender> serviceRenders { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        serviceRenders = await serviceService.GetServices();
+    }
+}
+

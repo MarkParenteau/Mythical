@@ -1,0 +1,5 @@
+B:\dev\repo\Mythical\Database\bin\Debug\netstandard2.0\Database.deps.json
+B:\dev\repo\Mythical\Database\bin\Debug\netstandard2.0\Database.dll
+B:\dev\repo\Mythical\Database\obj\Debug\netstandard2.0\Database.csprojAssemblyReference.cache
+B:\dev\repo\Mythical\Database\obj\Debug\netstandard2.0\Database.AssemblyInfoInputs.cache
+B:\dev\repo\Mythical\Database\obj\Debug\netstandard2.0\Database.AssemblyInfo.cs

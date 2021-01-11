@@ -1,0 +1,49 @@
+﻿@page "/serviceDetail/{serviceid}"
+@inject ServicesService serviceService
+@using MythicalWebApp.Data
+@using Mythical.RenderModels
+
+
+<h1>Service Details</h1>
+
+@if (service == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h3>Current Participants</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Role</th>
+                <th>User</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var groups in service.InvolvedUsers)
+            {
+                foreach(var user in groups.Users)
+                {
+                <tr>
+                    <td>@groups.Role.RoleName</td>
+                    <td>@user.Name</td>
+                </tr>
+                }              
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public string serviceId { get; set; }
+
+    private  ServiceRender service { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        service = await serviceService.GetService(serviceId);
+    }
+}
+
